@@ -1,0 +1,22 @@
+<!--back()-->
+<!--forward()-->
+<!--go(index)-->
+<!--pushState(stateObject, title, url)-->
+<!--replaceState(stateObject, title, url)-->
+<html>
+<script>
+    console.log(history)
+    function goBack() {
+      history.back()
+    }
+    function goForward() {
+      history.forward()
+    }
+</script>
+<body>
+    <p>This is index.html</p>
+    <a href="index1.html">To Index1</a>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<script>
+  console.log(history)
+  function goBack() {
+    history.back()
+  }
+  function goForward() {
+    history.forward()
+  }
+  function pushToIndex3() {
+    history.pushState({action: "push from index1->3"}, '', "./index3.html")
+  }
+  function replaceToIndex3() {
+    history.replaceState({action: "replace from index1->3"}, '', "./index3.html")
+  }
+</script>
+<body>
+    <p>This is index1.html</p>
+    <a href="index2.html">To Index2</a>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+    <button onclick="pushToIndex3()">Push State to Index3.html</button>
+    <button onclick="replaceToIndex3()">Replace State to Index3.html</button>
+</body>
+</html>
