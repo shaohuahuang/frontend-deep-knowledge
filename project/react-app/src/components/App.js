@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <Link to="./profile">To Profile</Link>
       </header>
+
     </div>
   );
 }
